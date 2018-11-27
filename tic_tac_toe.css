@@ -1,0 +1,158 @@
+:root{
+  --bg-color_darkred: rgb(175, 0, 10);
+}
+
+#mainConainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  width: 900px;
+}
+header p{
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 5px;
+}
+hr{
+  height: 1vh;
+  background-color: var(--bg-color_darkred);
+}
+#gameContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 900px;
+}
+#gameBox{
+    width: 490px;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+#gameBox .gameCellBtn{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}
+.gameCellBtn{
+  font-size: 10em;
+  font-weight: bold;
+  transform: rotateZ(45);
+}
+
+#middleLine{
+  margin-top: -10px;
+  width: 10px;
+  height: 40vh;
+  background-color: var(--bg-color_darkred);
+}
+#playerInfoBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+}
+#playerInfoBox p{
+  font-size: 2em;
+  font-weight: bold;
+}
+#resetBtn{
+  position: relative;
+  top: 0px;
+  width: 200px;
+  height: 100px;
+  font-size: 2em;
+}
+
+/* Win Linjen --------------------------------------------------------
+  Förkortningar; Y led | X led | Z rotation */
+#winLineY1{
+  position: relative;
+  top: -404px;
+  width: 450px;
+  height: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+#winLineY2{
+  position: relative;
+  top: -251px;
+  width: 450px;
+  height: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+#winLineY3{
+  position: relative;
+  top: -98px;
+  left: 17px;
+  width: 450px;
+  height: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+
+#winLineX1{
+  position: relative;
+  top: -474px;
+  left: -368px;
+  height: 450px;
+  width: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+#winLineX2{
+  position: relative;
+  top: -477px;
+  left: -215.5px;
+  height: 450px;
+  width: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+#winLineX3{
+  position: relative;
+  top: -477px;
+  left: -62px;
+  height: 450px;
+  width: 0.6vh;
+  background-color: var(--bg-color_darkred);
+}
+
+#winLineZ1{
+  position: relative;
+  top: -569px;
+  left: -235px;
+  height: 620px;
+  width: 0.6vh;
+  background-color: var(--bg-color_darkred);
+  transform: rotateZ(-45deg);
+}
+#winLineZ2{
+  position: relative;
+  top: -568px;
+  left: -235px;
+  height: 620px;
+  width: 0.6vh;
+  background-color: var(--bg-color_darkred);
+  transform: rotateZ(45deg);
+}
+
+/* Formatyering för celler -----------------------------*/
+.imgSymbols{
+  margin-top: 15px;
+  width: 75%;
+}
+#c1x1, #c1x2, #c2x1, #c2x2{
+  border-bottom: 10px solid var(--bg-color_darkred);
+  border-right: 10px solid var(--bg-color_darkred);
+}
+#c1x3, #c2x3{
+  border-bottom: 10px solid var(--bg-color_darkred);
+}
+#c3x1, #c3x2{
+  border-right: 10px solid var(--bg-color_darkred);
+}

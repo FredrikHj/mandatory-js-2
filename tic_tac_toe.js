@@ -59,18 +59,17 @@ for (let i = 0; i < getGameCell.length; i++){
 // Funktioner fär varje cell
 function setSymbolOfCell1x1(){
   getCell1x1.removeEventListener('click', inGame);
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
-
-  let name = "Cell1x1"
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
+  let name = "Cell1x1";
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell1x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell1x1).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell1x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell1x1).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -81,17 +80,16 @@ function setSymbolOfCell1x1(){
 function setSymbolOfCell1x2(){
   getCell1x2.removeEventListener('click', inGame);
   let name = "Cell1x2";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
-
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell1x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell1x2).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell1x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell1x2).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -102,17 +100,16 @@ function setSymbolOfCell1x2(){
 function setSymbolOfCell1x3(){
   getCell1x3.removeEventListener('click', inGame);
   let name = "Cell1x3";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
-
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell1x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell1x3).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell1x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell1x3).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -123,17 +120,17 @@ function setSymbolOfCell1x3(){
 function setSymbolOfCell2x1(){
   getCell2x1.removeEventListener('click', inGame);
   let name = "Cell2x1";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
 
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell2x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell2x1).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell2x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell2x1).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -144,17 +141,17 @@ function setSymbolOfCell2x1(){
 function setSymbolOfCell2x2(){
   getCell2x2.removeEventListener('click', inGame);
   let name = "Cell2x2";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
 
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell2x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell2x2).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell2x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell2x2).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -165,17 +162,17 @@ function setSymbolOfCell2x2(){
 function setSymbolOfCell2x3(){
   getCell2x3.removeEventListener('click', inGame);
   let name = "Cell2x3";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
 
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell2x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell2x3).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell2x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell2x3).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -186,17 +183,17 @@ function setSymbolOfCell2x3(){
 function setSymbolOfCell3x1(){
   getCell3x1.removeEventListener('click', inGame);
   let name = "Cell3x1"
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
 
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell3x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell3x1).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell3x1.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell3x1).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -208,16 +205,16 @@ function setSymbolOfCell3x2(){
   getCell3x2.removeEventListener('click', inGame);
   let name = "Cell3x2";
   let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
+  $(getImgSymbol).addClass("imgSymbols");
 
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell3x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell3x2).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell3x2.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell3x2).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -228,17 +225,16 @@ function setSymbolOfCell3x2(){
 function setSymbolOfCell3x3(){
   getCell3x3.removeEventListener('click', inGame);
   let name = "Cell3x3";
-  let getImgSymbol = $('<img>').get(0); // jq skapa en img
-  getImgSymbol.setAttribute('class', 'imgSymbols');
-
+  let getImgSymbol = $('<img>').get(0);
+  $(getImgSymbol).addClass("imgSymbols");
   if (circleOrCross === 0){
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCirclefile);
-    getCell3x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCirclefile);
+    $(getCell3x3).append(getImgSymbol);
     circleOrCross = 1;
     symbolStr = "Circel";
   }else{
-    incommingSymbol = getImgSymbol.setAttribute("src", getImgCrossfile);
-    getCell3x3.appendChild(getImgSymbol);
+    incommingSymbol = $(getImgSymbol).attr("src", getImgCrossfile);
+    $(getCell3x3).append(getImgSymbol);
     circleOrCross = 0;
     symbolStr = "Cross";
   }
@@ -257,61 +253,61 @@ function stopListenAtDivs(){
 // Redera ut vinnarlinjen
 let getWinLinePlace = $("#gameBox").get(0);
 function winLineY1(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineY1");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineY1");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineY2(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineY2");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineY2");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineY3(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineY3");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineY3");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineX1(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineX1");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineX1");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 
 // Ändra y TILL x M.M. PÅ NEDAN
 function winLineX2(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineX2");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineX2");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineX3(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineX3");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0); 
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineX3");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineZ1(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineZ1");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineZ1");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 function winLineZ2(){
-  let createWinline = $('<div></div>').get(0); // jq skapa en div
-  createWinline.setAttribute("class", "winPlayer");
-  createWinline.setAttribute("id", "winLineZ2");
-  getWinLinePlace.appendChild(createWinline);
+  let createWinline = $('<div></div>').get(0);
+  $(createWinline).addClass("winPlayer");
+  $(createWinline).attr("id", "winLineZ2");
+  $(getWinLinePlace).append(createWinline);
   stopListenAtDivs();
 }
 
@@ -319,14 +315,13 @@ function inGame(e){
   let getResetBtnPlace = $("#playerInfoBox").get(0);
   let createResetBtn = $("<button></button>").get(0);
   let getResetBtnIfExist = $('#resetBtn').get(0);
-  console.log(getResetBtnIfExist);
-  createResetBtn.setAttribute('id', 'resetBtn');
+  $(createResetBtn).attr("id", "resetBtn");
   createResetBtn.textContent = "Nytt parti";
 
   let targetCell = e.target;
 
   if (getResetBtnIfExist === undefined){
-  getResetBtnPlace.appendChild(createResetBtn);
+  $(getResetBtnPlace).append(createResetBtn);
   }
   if (targetCell === getCell1x1){
     setSymbolOfCell1x1();
@@ -360,26 +355,26 @@ function inGame(e){
   let getPlayer2PElement = $("#player2").get(0);
   let currentPlayer;
   if (circleOrCross !== 1){
-    getPlayer1PElement.setAttribute('style', 'color: green');
-    getPlayer2PElement.setAttribute('style', 'color: red');
+    $("#player1").css("color", "green");
+    $("#player2").css("color", "red");
     currentPlayer = getPlayer2PElement.textContent;
   }else{
-    getPlayer2PElement.setAttribute('style', 'color: green');
-    getPlayer1PElement.setAttribute('style', 'color: red');
+    $("#player2").css("color", "green");
+    $("#player1").css("color", "red");
     currentPlayer = getPlayer1PElement.textContent;
   }
 
   // Ge ett vinnst meddelande efter om en div element skapas för strecket
   let getPlaceWinnerPlayer = $("#wonPlayer").get(0);
   function getStrPlayerWinner(){
-    //let ifWinnerLineShow = document.querySelector('.winPlayer').className;
     let ifWinnerLineShow = $(".winPlayer").get(0).className;
     if (ifWinnerLineShow === "winPlayer"){
       let winnerPlayer = "Vinnst för: " + currentPlayer;
-      getPlaceWinnerPlayer.setAttribute('style', 'width: 170px;');
       getPlaceWinnerPlayer.textContent = winnerPlayer;
-      getPlayer1PElement.setAttribute('style', 'color: black')
-      getPlayer2PElement.setAttribute('style', 'color: black')
+
+      $("#wonPlayer").css("width", "170px");
+      $("#player1").css("color", "black");
+      $("#player2").css("color", "black");
     }
   }
 

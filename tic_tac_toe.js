@@ -376,6 +376,7 @@ function inGame(e){
     let ifWinnerLineShow = $(".winPlayer").get(0).className;
     if (ifWinnerLineShow === "winPlayer"){
       let winnerPlayer = "Vinnst för: " + currentPlayer;
+      getPlaceWinnerPlayer.setAttribute('style', 'width: 170px;');
       getPlaceWinnerPlayer.textContent = winnerPlayer;
       getPlayer1PElement.setAttribute('style', 'color: black')
       getPlayer2PElement.setAttribute('style', 'color: black')

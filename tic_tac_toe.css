@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: orange;
+  width: 1000px;
+  height: 1000px;
 }
 header{
   width: 900px;
@@ -64,6 +67,15 @@ hr{
   font-size: 2em;
   font-weight: bold;
 }
+#wonPlayer{
+  padding-top: 50px;
+  margin-left: -100px;
+  text-align: center;
+  height: 100px;
+  border-radius: 50px;
+  background-color: green;
+  transform: scale(2);
+}
 #resetBtn{
   position: relative;
   top: 0px;
@@ -76,22 +88,21 @@ hr{
   Förkortningar; Y led | X led | Z rotation */
 #winLineY1{
   position: relative;
-  top: -404px;
+  top: -402px;
   width: 450px;
   height: 0.6vh;
   background-color: var(--bg-color_darkred);
 }
 #winLineY2{
   position: relative;
-  top: -251px;
+  top: -246px;
   width: 450px;
   height: 0.6vh;
   background-color: var(--bg-color_darkred);
 }
 #winLineY3{
   position: relative;
-  top: -98px;
-  left: 17px;
+  top: -84px;
   width: 450px;
   height: 0.6vh;
   background-color: var(--bg-color_darkred);
@@ -99,24 +110,24 @@ hr{
 
 #winLineX1{
   position: relative;
-  top: -474px;
-  left: -368px;
+  top: -312px;
+  left: -393px;
   height: 450px;
   width: 0.6vh;
   background-color: var(--bg-color_darkred);
 }
 #winLineX2{
   position: relative;
-  top: -477px;
-  left: -215.5px;
+  top: -315px;
+  left: -232.5px;
   height: 450px;
   width: 0.6vh;
   background-color: var(--bg-color_darkred);
 }
 #winLineX3{
   position: relative;
-  top: -477px;
-  left: -62px;
+  top: -315px;
+  left: -72px;
   height: 450px;
   width: 0.6vh;
   background-color: var(--bg-color_darkred);
@@ -124,7 +135,7 @@ hr{
 
 #winLineZ1{
   position: relative;
-  top: -569px;
+  top: -394px;
   left: -235px;
   height: 620px;
   width: 0.6vh;
@@ -133,8 +144,8 @@ hr{
 }
 #winLineZ2{
   position: relative;
-  top: -568px;
-  left: -235px;
+  top: -410px;
+  left: -220px;
   height: 620px;
   width: 0.6vh;
   background-color: var(--bg-color_darkred);

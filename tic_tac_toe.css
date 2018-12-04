@@ -158,13 +158,13 @@ hr{
   margin-top: 15px;
   width: 75%;
 }
-#c1x1, #c1x2, #c2x1, #c2x2{
+#cell1x1, #cell1x2, #cell2x1, #cell2x2{
   border-bottom: 10px solid var(--bg-color_darkred);
   border-right: 10px solid var(--bg-color_darkred);
 }
-#c1x3, #c2x3{
+#cell1x3, #cell2x3{
   border-bottom: 10px solid var(--bg-color_darkred);
 }
-#c3x1, #c3x2{
+#cell3x1, #cell3x2{
   border-right: 10px solid var(--bg-color_darkred);
 }
